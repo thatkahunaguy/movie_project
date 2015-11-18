@@ -1,8 +1,7 @@
-# [Bootstrap](http://getbootstrap.com)
+# [Movie Trailer Website Project](https://docs.google.com/document/d/1joDQNQl_4icYYm6tM_F9ch5hZEH_f157hlljSUGOLWs/pub?embedded=true)
 
-Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development, created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thornton](https://twitter.com/fat), and maintained by the [core team](https://github.com/orgs/twbs/people) with the massive support and involvement of the community.
+This is an initial project creating a movie trailer website with python.  I created a movie class which stores a movie's title, storyline, trailer url, and poster art url and added 6 examples of favorite movies to the project.  Utilizing a slightly modified version of the provided fresh_tomatoes.py, an html page is generated with the poster art & titles. Hovering over the art provides the storyline summary above the art.  Clicking the art shows the trailer.
 
-To get started, check out <http://getbootstrap.com>!
 
 
 ## Table of contents
@@ -19,61 +18,46 @@ To get started, check out <http://getbootstrap.com>!
 
 ## Quick start
 
-Several quick start options are available:
+To get started:
 
-* [Download the latest release](https://github.com/twbs/bootstrap/archive/v3.3.5.zip).
-* Clone the repo: `git clone https://github.com/twbs/bootstrap.git`.
-* Install with [Bower](http://bower.io): `bower install bootstrap`.
-* Install with [npm](https://www.npmjs.com): `npm install bootstrap`.
-* Install with [Meteor](https://www.meteor.com): `meteor add twbs:bootstrap`.
-* Install with [Composer](https://getcomposer.org): `composer require twbs/bootstrap`.
-
-Read the [Getting started page](http://getbootstrap.com/getting-started/) for information on the framework contents, templates and examples, and more.
+* Clone the repo: `git clone https://github.com/thatkahunaguy/movie_project.git`.
+* This project requires python 2.7
+* Run entertainment_center.py
+* The file fresh_tomatoes.html will be generated/re-generated and open a browser window to display
 
 ### What's included
 
-Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
+Within the download you'll find the following directories and files. You'll see the folowing:
 
 ```
-bootstrap/
-├── css/
-│   ├── bootstrap.css
-│   ├── bootstrap.css.map
-│   ├── bootstrap.min.css
-│   ├── bootstrap.min.css.map
-│   ├── bootstrap-theme.css
-│   ├── bootstrap-theme.css.map
-│   ├── bootstrap-theme.min.css
-│   └── bootstrap-theme.min.css.map
-├── js/
-│   ├── bootstrap.js
-│   └── bootstrap.min.js
-└── fonts/
-    ├── glyphicons-halflings-regular.eot
-    ├── glyphicons-halflings-regular.svg
-    ├── glyphicons-halflings-regular.ttf
-    ├── glyphicons-halflings-regular.woff
-    └── glyphicons-halflings-regular.woff2
+movie_project/
+├── entertainment_center.py   *run this to generate the html output*
+├── fresh_tomatoes.py         *this  file generates the html output*
+├── media.py                  *this file contains the movie instances*
+├── fresh_tomatoes.html       *this is the output html*
+├── README.md
 ```
 
-We provide compiled CSS and JS (`bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*`). CSS [source maps](https://developer.chrome.com/devtools/docs/css-preprocessors) (`bootstrap.*.map`) are available for use with certain browsers' developer tools. Fonts from Glyphicons are included, as is the optional Bootstrap theme.
 
 
 ## Bugs and feature requests
-
+Note that the provided fresh_tomatoes.py was modified to show movie storylines on hover and to conform to the [google style guide section below](https://google.github.io/styleguide/pyguide.html?showone=Strings#Strings):
+```
+Avoid using the + and += operators to accumulate a string within a loop. Since strings are immutable, this creates unnecessary temporary objects and results in quadratic rather than linear running time. Instead, add each substring to a list and ''.join the list after the loop terminates (or, write each substring to a io.BytesIO buffer).
+```
 Have a bug or a feature request? Let me know.
 
 ## Documentation
 
-Sorry, this is the documentation!
+This is the whole enchilada!
 
 ## Contributing
 
-Need to get back to using git before I can think about this...project 2
+Sorry, only independent and web search work allowed at this point!
 
 ## Community
 
-* Udacity discussions are here(https://discussions.udacity.com/t/movie-website-mini-project-fs-feb/959).
+* Udacity discussions are [here](https://discussions.udacity.com/t/movie-website-mini-project-fs-feb/959).
 
 
 ## Versioning
@@ -92,3 +76,5 @@ Debut release
 ## Copyright and license
 
 Code released under [the MIT license](https://opensource.org/licenses/MIT). Docs released under [Creative Commons](http://creativecommons.org/licenses/by/4.0/).
+
+
